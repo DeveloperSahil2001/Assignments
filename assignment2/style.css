@@ -1,0 +1,32 @@
+dl > div {
+    background: gray;
+  }
+
+  dt {
+    background:#f15bb5;
+    font-size: 1.8em;
+    border-bottom: 1px solid #caf0f8;
+    border-top: 1px solid #ade8f4;
+    color:white;
+    margin: 0;
+    padding-left: 12px;
+    position: sticky;
+    top:0%;
+  }
+
+  h1{
+    text-align: center;
+    color:#e09f3e;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  dd {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    padding: 0 0 0 12px;
+  }
+
+  dd + dd {
+    border-top: 2px solid black;
+  }

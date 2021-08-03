@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav>
+      <h1><a href="#">FoodVilla</a></h1>
+      <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SERVICES</a></li>
+        <li><a href="#">ORDER</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">ABOUT</a></li>
+      </ul>
+    </nav>
+
+    <div class="w3-content w3-section">
+      <div class="mySlides">
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGZvb2R8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" style="width:100%">
+      </div>
+      </div>
+      <script>
+        var myIndex = 0;
+        carousel();
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+    <section>
+      <h1 id="head" style="padding-top: 0%;margin-top: 0%;">Our best Cuisine</h1>
+      <div class="contain">
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=500&q=60" alt="">
+              <h1>Food Name</h1>
+              <h4>Price:100$</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui provident accusantium, ab magni, libero minus facere vel accusamus quo ea excepturi quia. Et, doloribus nulla iure molestias officiis alias.</p>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=500&q=60" alt="">
+              <h1>Food Name</h1>
+              <h4>Price:100$</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui provident accusantium, ab magni, libero minus facere vel accusamus quo ea excepturi quia. Et, doloribus nulla iure molestias officiis alias.</p>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=500&q=60" alt="">
+              <h1>Food Name</h1>
+              <h4>Price:100$</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui provident accusantium, ab magni, libero minus facere vel accusamus quo ea excepturi quia. Et, doloribus nulla iure molestias officiis alias.</p>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=500&q=60" alt="">
+              <h1>Food Name</h1>
+              <h4>Price:100$</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui provident accusantium, ab magni, libero minus facere vel accusamus quo ea excepturi quia. Et, doloribus nulla iure molestias officiis alias.</p>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1432139509613-5c4255815697?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzV8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=500&q=60" alt="">
+              <h1>Food Name</h1>
+              <h4>Price:100$</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui provident accusantium, ab magni, libero minus facere vel accusamus quo ea excepturi quia. Et, doloribus nulla iure molestias officiis alias.</p>
+          </div>
+          <div class="card">
+              <img src="https://images.unsplash.com/photo-1497888329096-51c27beff665?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fGZvb2R8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=500&q=60" alt="">
+              <h1>Food Name</h1>
+              <h4>Price:100$</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui provident accusantium, ab magni, libero minus facere vel accusamus quo ea excepturi quia. Et, doloribus nulla iure molestias officiis alias.</p>
+          </div>
+      </div>
+    </section>
+    <div class="contact">
+      <h1>Contact Us</h1>
+      <section>
+        <div id="d1">
+          <i class="fa fa-mobile-phone"></i>
+          <h2>Feel free to Contact Us.</h2>
+          <p>You can share your experience also.</p>
+        </div>
+            <table id="d2" cellspacing="20px">
+              <tr>
+                <td><input type="text" placeholder="First Name"></td>
+                <td><input type="text" placeholder="Last Name"></td>
+              </tr>
+              <tr>
+                <td><input type="text" placeholder="Mobile Number"></td>
+                <td><input type="text" placeholder="Email"></td>
+              </tr>
+              <tr>
+                <td colspan="2"><textarea placeholder="Say Something to Us..."></textarea></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button id="submit">SUBMIT</button>
+                </td>
+              </tr>
+            </table>
+      </section>
+    </div>
+    <footer>
+      <div id="b1">
+        <div id="icon"><i class="fa fa-github" aria-hidden="true"></i></div>
+        <div id="icon"><i class="fa fa-linkedin-square"></i></div>
+        <div id="icon"><i class="fa fa-envelope"></i></div>
+      </div>
+      <p>&copy; Designed and Developed by Sahil Goyal</p>
+    </footer>
+  </body>
+</html>

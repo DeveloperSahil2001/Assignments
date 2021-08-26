@@ -1,0 +1,68 @@
+body{
+ background-color: rgb(58, 80, 102);
+ min-width: 450px;
+}
+
+h1{
+ color: white;
+ text-align: center;
+ font-family: sans-serif;
+ font-weight: 700;
+ font-size: 3em;
+}
+
+#container{
+ background-color: #ADEFD1FF;
+ height: 100%;
+ width: 80%;
+ margin-left: 10%;
+ border-radius: 20px;
+ border: 5px solid #52796f;
+}
+
+#inputbox{
+ text-align: center;
+ margin-left: 20%;
+ width: 60%;
+ height: 50px;
+ margin-bottom: 20px;
+}
+
+#inputbox input{
+ height: 40px;
+ border: 5px solid #52796f;
+ width: 48%;
+}
+
+#inputbox button{
+ height: 40px;
+ width: 12%;
+ font-size: 24px;
+}
+
+input{
+ border-radius: 10px;
+ text-align: center;
+
+}
+
+
+table{
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
+.fa-edit{
+ color: white;
+}
+
+.fa-sort-up{
+ color: green;
+}
+
+.fa-sort-down{
+ color: red;
+}

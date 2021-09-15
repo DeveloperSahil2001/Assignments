@@ -1,0 +1,51 @@
+*{
+ text-align: center;
+ font-family: Arial, Helvetica, sans-serif;
+ text-decoration: none;
+}
+
+li{
+ list-style: none;
+ padding:10px;
+ border: 2px solid lightcyan;
+ margin-bottom:10px;
+ width:80%;
+ margin-left: 10%;
+ margin-right: 10%;
+}
+
+body{
+ background-color: lightblue;
+ width: 100%;
+}
+
+input{
+ height: 40px;
+ width: 40%;
+ font-size: 18px;
+}
+
+textarea{
+ height:150px;
+ width: 40%;
+ font-size: 18px;
+}
+
+button{
+ width: 40%;
+ height: 40px;
+ font-weight: bold;
+ border-radius: 20px;
+ background-color: tomato;
+ color: white;
+ font-size: 18px;
+}
+
+label{
+ font-size: 24px;
+ font-weight: bold;
+}
+
+p{
+ font-size: 18px;
+}

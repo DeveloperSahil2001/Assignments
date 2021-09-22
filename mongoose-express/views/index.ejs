@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="/products/new">Add New Product</a>
+    <h1>All Products</h1>
+    <ul>
+      <% for(var product of products){ %>
+      <li>
+        <h3><%= product.name %></h3>
+        <p><%= product.price %></p>
+        <p><%= product.desc %></p>
+        <a href="/products/<%= product._id %>">Show</a>
+        <a href="/products/<%=product._id  %>/edit">Edit</a>
+        <br>
+        <br>
+        <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

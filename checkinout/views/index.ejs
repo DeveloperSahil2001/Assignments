@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/app.css">
+    <title>Document</title>
+  </head>
+
+  <body>
+    <a href="/persons/new">New Entry</a>
+    <h1>Persons Data</h1>
+    <ul>
+      <% for(var person of persons){ %>
+      <li>
+        <p>Name: <%=person.name%></p>
+        <p>Email: <%=person.email%></p>
+        <p>Mobile No: <%=person.contact %></p>
+        <p>Address: <%=person.address %></p>
+        <p>Checked In: <%=person.inTime %></p>
+        <% if (person.outTime) { %>
+        <p>Checked Out: <%=person.outTime%> </p>
+        <p>InStatus: false</p>
+        <% } else { %>
+        <p>InStatus: true</p>
+        <% } %> 
+        <p>Date: <%=person.dateAndDay%></p>
+        <a href="/persons/<%=person._id%>">Show</a>
+        <a href="/persons/<%=person._id%>/edit">Edit</a>
+        <form action="/persons/<%=person._id %>?_method=DELETE" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

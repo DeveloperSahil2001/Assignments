@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit Person Data</h1>
+
+    
+    <form action="/persons/<%=personFound._id%>?_method=PATCH" method="POST">
+        <label for="name">Name: </label>
+        <input type="text" name="name" value="<%=personFound.name%>">
+        <br><br>
+        <label for="email">Email: </label>
+        <input type="email" name="email" value="<%=personFound.email%>">
+        <br><br>
+        <label for="contact">Contact: </label>
+        <input type="tel" name="contact" value="<%=personFound.contact%>">
+        <br><br>
+        <label for="inTime">InTime: </label>
+        <input type="text" name="inTime" value="<%=personFound.inTime%>">
+        <br><br>
+        <label for="outTime">OutTime: </label>
+        <input type="text" name="outTime" value="<%=personFound.outTime%>">
+        <br><br>
+        <label for="dateAndDay">Date and Day: </label>
+        <input type="text" name="dateAndDay" value="<%=personFound.dateAndDay%>">
+        <br><br>
+        <label for="address">Address: </label>
+        <input type="text" name="address" value="<%=personFound.address%>">
+        <br><br>
+        <button type="submit">Update and Save</button>
+      </form>
+      
+</body>
+</html>

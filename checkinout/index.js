@@ -5,14 +5,14 @@ const path=require('path');
 const Person=require('./models/person');
 const seedDB=require('./seed');
 const methodOverride=require('method-override');
-const API_kEY="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";
+const API_kEY="";
 const sgMail=require('@sendgrid/mail');
 
 sgMail.setApiKey(API_kEY);
 
 const message={
   to:'',
-  from:'sahil0023.cse19@chitkara.edu.in',
+  from:'',
   subject:'',
   text:'',
   html:'',
